@@ -238,3 +238,51 @@ word = "yello"
 word = 'h' + word[1:]
 print(word)
 
+Sets
+
+#Create two empty sets
+
+set1=set()
+set2=set()
+
+#update set1 with 7,8,9,1,2,3,4,5,0
+
+set1.update([7,8,9,1,2,3,4,5,0])
+print("Set1:",set1)
+
+#update set2 with 4,5,6,0
+
+set2.update([4,5,6,0])
+print("Set2:",set2)
+
+#check whether set2 is subset of set1 or no ?
+
+print("Is set2 a subset of set1 ? : ", set2.issubset(set1))
+
+#check whether both have common elements are no ?
+
+common=set1.intersection(set2)
+print("Common elements: ",common)
+print("Do they have common elements ?", len(common)>0)
+
+#remove 8 from set 1 and set 2 ==> find the inferences
+
+print("\nRemoving 8 from both sets: ")
+if 8 in set1:
+  set1.remove(8)
+if 8 in set2:
+  set2.remove(8)
+print(set1)
+print(set2)
+
+#discard 0 from set1 and set2
+
+set1.discard(0)
+set2.discard(0)
+print(set1)
+print(set2)
+
+#find collection of both sets ===> set1 and set2
+
+union_sets=set1.union(set2)
+print("Union of set1 and set2 is : ",union_sets)
