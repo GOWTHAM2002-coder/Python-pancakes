@@ -472,3 +472,160 @@ result = tuple(lst)
 print(result)
 
 (5, 4, 3, 6, 2, 7, 1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 5)
+
+Conditional Statements:
+
+1. Check if a number is positive
+x = 5
+if x > 0:
+    print("Positive")
+else:
+    print("Not positive")
+
+2. Check if a number is even or odd
+x = 7
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+3. Find the greatest of two numbers
+a = 10
+b = 20
+if a > b:
+    print(a, "is greater")
+else:
+    print(b, "is greater")
+
+4. Find the greatest of three numbers
+a = 10
+b = 25
+c = 15
+if a >= b and a >= c:
+    print(a, "is greatest")
+elif b >= a and b >= c:
+    print(b, "is greatest")
+else:
+    print(c, "is greatest")
+
+5. Check if a number is divisible by 5
+x = 25
+if x % 5 == 0:
+    print("Divisible by 5")
+else:
+    print("Not divisible by 5")
+
+6. Check if a person is eligible to vote
+age = 17
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible")
+
+7. Check if a year is a leap year
+year = 2024
+if (year % 400 == 0) or (year % 100 != 0 and year % 4 == 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+8. Check if a character is a vowel
+ch = 'a'
+if ch in 'aeiouAEIOU':
+    print("Vowel")
+else:
+    print("Consonant")
+
+9. Check if a number is within a range
+x = 15
+if 10 <= x <= 20:
+    print("Inside range")
+else:
+    print("Outside range")
+
+10. Simple grading system
+marks = 82
+if marks >= 90:
+    print("A")
+elif marks >= 80:
+    print("B")
+elif marks >= 70:
+    print("C")
+else:
+    print("D")
+
+11. Check if the number is zero
+x = 0
+if x == 0:
+    print("Zero")
+else:
+    print("Non-zero")
+
+12. Check if two numbers are equal
+a = 10
+b = 10
+if a == b:
+    print("Equal")
+else:
+    print("Not equal")
+
+13. Check if a number is negative, zero, or positive
+x = -3
+if x > 0:
+    print("Positive")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative")
+
+14. Check if a person is a teenager
+age = 15
+if 13 <= age <= 19:
+    print("Teenager")
+else:
+    print("Not a teenager")
+
+15. Simple login check
+username = "admin"
+password = "1234"
+if username == "admin" and password == "1234":
+    print("Login successful")
+else:
+    print("Invalid credentials")
+
+16. Check if a triangle is valid
+a, b, c = 3, 4, 5
+if a + b > c and a + c > b and b + c > a:
+    print("Valid triangle")
+else:
+    print("Invalid triangle")
+
+17. Determine if temperature is hot, warm, or cold
+temp = 30
+if temp > 35:
+    print("Hot")
+elif temp >= 20:
+    print("Warm")
+else:
+    print("Cold")
+
+18. Check if a number is a multiple of both 3 and 7
+x = 21
+if x % 3 == 0 and x % 7 == 0:
+    print("Multiple of 3 and 7")
+else:
+    print("Not a multiple")
+
+19. Check if a letter is uppercase or lowercase
+ch = 'G'
+if ch.isupper():
+    print("Uppercase")
+else:
+    print("Lowercase")
+
+20. Check eligibility for discount
+amount = 650
+if amount >= 500:
+    print("You get a discount!")
+else:
+    print("No discount")
