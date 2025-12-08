@@ -1,1 +1,230 @@
+30 python programs with loops, conditions, conditions inside loops without functions.....
+
+1. Print numbers from 1 to 10
+for i in range(1, 11):
+    print(i)
+
+2. Print even numbers from 1 to 20
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+
+3. Print odd numbers from 1 to 20
+for i in range(1, 21):
+    if i % 2 != 0:
+        print(i)
+
+4. Sum of first 10 natural numbers
+s = 0
+for i in range(1, 11):
+    s += i
+print("Sum =", s)
+
+5. Factorial of a number
+n = int(input("Enter number: "))
+f = 1
+for i in range(1, n+1):
+    f *= i
+print("Factorial =", f)
+
+6. Reverse a number
+n = int(input("Enter number: "))
+rev = 0
+while n > 0:
+    rev = rev * 10 + (n % 10)
+    n //= 10
+print("Reversed =", rev)
+
+7. Count digits in a number
+n = int(input("Enter number: "))
+c = 0
+while n > 0:
+    c += 1
+    n //= 10
+print("Digits =", c)
+
+8. Check if number is prime
+n = int(input("Enter number: "))
+flag = True
+for i in range(2, n):
+    if n % i == 0:
+        flag = False
+        break
+if flag:
+    print("Prime")
+else:
+    print("Not Prime")
+
+9. Print multiplication table
+n = int(input("Enter number: "))
+for i in range(1, 11):
+    print(n, "*", i, "=", n*i)
+
+10. Fibonacci series
+a, b = 0, 1
+n = int(input("Enter count: "))
+for i in range(n):
+    print(a)
+    a, b = b, a + b
+
+11. Print characters of a string
+s = input("Enter string: ")
+for ch in s:
+    print(ch)
+
+12. Count vowels in a string
+s = input("Enter string: ")
+v = 0
+for ch in s:
+    if ch.lower() in "aeiou":
+        v += 1
+print("Vowels =", v)
+
+13. Check palindrome string
+s = input("Enter string: ")
+rev = ""
+for ch in s:
+    rev = ch + rev
+print("Palindrome" if s == rev else "Not Palindrome")
+
+14. Largest number in a list
+lst = [10, 3, 77, 25, 8]
+maxi = lst[0]
+for i in lst:
+    if i > maxi:
+        maxi = i
+print("Largest =", maxi)
+
+15. Smallest in a list
+lst = [10, 3, 77, 25, 8]
+mini = lst[0]
+for i in lst:
+    if i < mini:
+        mini = i
+print("Smallest =", mini)
+
+16. Count positive and negative numbers
+lst = [-4, 6, 0, -2, 9]
+pos = 0
+neg = 0
+for i in lst:
+    if i > 0:
+        pos += 1
+    elif i < 0:
+        neg += 1
+print("Positive =", pos)
+print("Negative =", neg)
+
+17. Check armstrong number
+n = int(input("Enter number: "))
+temp = n
+s = 0
+while temp > 0:
+    d = temp % 10
+    s += d*d*d
+    temp //= 10
+print("Armstrong" if s == n else "Not Armstrong")
+
+18. Print factors of a number
+n = int(input("Enter number: "))
+for i in range(1, n+1):
+    if n % i == 0:
+        print(i)
+
+19. Print numbers divisible by 3 and 5
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i)
+
+20. Sum of digits of a number
+n = int(input("Enter number: "))
+s = 0
+while n > 0:
+    s += n % 10
+    n //= 10
+print("Sum =", s)
+
+21. Print square of numbers from 1 to 10
+for i in range(1, 11):
+    print(i, i*i)
+
+22. Print pattern (triangle)
+*
+**
+***
+****
+
+for i in range(1, 5):
+    print("*" * i)
+
+23. Countdown
+for i in range(10, -1, -1):
+    print(i)
+
+24. Check strong number
+n = int(input("Enter number: "))
+temp = n
+s = 0
+while temp > 0:
+    d = temp % 10
+    f = 1
+    for i in range(1, d+1):
+        f *= i
+    s += f
+    temp //= 10
+print("Strong" if s == n else "Not Strong")
+
+25. Print sum of even numbers from 1 to 50
+s = 0
+for i in range(1, 51):
+    if i % 2 == 0:
+        s += i
+print("Sum =", s)
+
+26. Reverse a string using loop
+s = input("Enter string: ")
+rev = ""
+for ch in s:
+    rev = ch + rev
+print(rev)
+
+27. Print all words separately
+s = input("Enter sentence: ")
+word = ""
+for ch in s:
+    if ch != " ":
+        word += ch
+    else:
+        print(word)
+        word = ""
+print(word)
+
+28. Print numbers until user enters 0
+n = int(input("Enter number: "))
+while n != 0:
+    print("You entered:", n)
+    n = int(input("Enter number: "))
+
+29. Count uppercase and lowercase letters
+s = input("Enter string: ")
+u = 0
+l = 0
+for ch in s:
+    if ch.isupper():
+        u += 1
+    elif ch.islower():
+        l += 1
+print("Uppercase =", u)
+print("Lowercase =", l)
+
+30. Print prime numbers from 1 to 50
+for n in range(1, 51):
+    if n > 1:
+        prime = True
+        for i in range(2, n):
+            if n % i == 0:
+                prime = False
+                break
+        if prime:
+            print(n)
 
