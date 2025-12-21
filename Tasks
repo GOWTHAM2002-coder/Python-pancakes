@@ -629,3 +629,66 @@ if amount >= 500:
     print("You get a discount!")
 else:
     print("No discount")
+
+5 Basic programs with and without function methods :
+
+1) Factorial ( without function )
+n=int(input("Enter a number : "))
+fact=1
+for i in range(n):
+    n=fact*i
+    fact+=n
+print(fact) 
+
+1) Factorial ( with function )
+def factorial(n):
+    fact=1
+    for i in range(1,n+1):
+        fact=fact*i
+    return fact
+n=int(input("Enter a number : "))
+print(factorial(n))
+
+2) Armstrong number ( without function )
+n=int(input("Enter a number : "))
+a=n
+count=0
+while a>0:
+    count+=1
+    a//=10
+a=n
+sum=0
+while a>0:
+    digit=a%10
+    sum=sum+(digit**count)
+    a//=10
+if sum==n:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+
+2) Armstrong number ( with function )
+def is_armstrong(n):
+    a=n
+    count=0
+    while a>0:
+        count+=1
+        a//=10
+    a=n
+    sum=0
+    while a>0:
+        digit=a%10
+        sum=sum+(digit**count)
+        a//=10
+    return sum==n
+num=int(input("Enter a number : "))
+if is_armstrong(num):
+    print("Armstrong number")
+else:
+    print("Not Armstrong number")
+
+3) Fibonacci series ( without function )
+a,b=0,1
+for i in range(10):
+    print(a,end=' ')
+    a,b=b,a+b
